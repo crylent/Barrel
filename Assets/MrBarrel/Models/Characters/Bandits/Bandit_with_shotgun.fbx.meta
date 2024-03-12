@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: d90676eb61572fe41ae8e448f4f7a51a
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 4572557423311633442
+    second: Rig_Big|Aim_Big
+  - first:
+      74: -5516092077863032158
+    second: Rig_Big|Aim_Long
+  - first:
+      74: -6062089293526125120
+    second: Rig_Big|Aim_Middle
+  - first:
+      74: 5753490637936997467
+    second: Rig_Big|Dancing
+  - first:
+      74: -1026930490634607680
+    second: Rig_Big|Dancing_loop
+  - first:
+      74: -4220730046599088408
+    second: Rig_Big|Give_it_to_me
+  - first:
+      74: -3095849827239069725
+    second: Rig_Big|Hands_Up
+  - first:
+      74: 7795870902854550473
+    second: Rig_Big|Idle_Big
+  - first:
+      74: 4452919135826752106
+    second: Rig_Big|Idle_feet_barrel
+  - first:
+      74: -750368374975688853
+    second: Rig_Big|Idle_Long
+  - first:
+      74: -5549384109248719938
+    second: Rig_Big|Idle_Main
+  - first:
+      74: -5055628118769986387
+    second: Rig_Big|Idle_Middle
+  - first:
+      74: 6547193280231134754
+    second: Rig_Big|Idle_no_barrel
+  - first:
+      74: -1973376727726873300
+    second: Rig_Big|Idle_with_barrel
+  - first:
+      74: -5521475720227096188
+    second: Rig_Big|Rig_main.004|mixamo.com|Layer0
+  - first:
+      74: 2381491914194692074
+    second: Rig_Big|Rig_main.004|Rig_main.004|New.001|Rig_main.004|New.001
+  - first:
+      74: -869762646643281757
+    second: Rig_Big|Rig_main.004|Rig_main.004|New|Rig_main.004|New
+  - first:
+      74: -7199868812581563227
+    second: Rig_Big|Rig_main.004|Rig_main.004|Running|Rig_main.004|Running
+  - first:
+      74: -770675483812943486
+    second: Rig_Big|Run_no_burrel
+  - first:
+      74: -898924301426291269
+    second: Rig_Big|Run_with_burrel
+  - first:
+      74: -2621050322867524802
+    second: Rig_Big|Running
+  - first:
+      74: -5272380676144586384
+    second: Rig_Big|Shoot_Big
+  - first:
+      74: -5509777063066732175
+    second: Rig_Big|Shoot_Long
+  - first:
+      74: 2678156731516152364
+    second: Rig_Big|Shoot_Middle
+  - first:
+      74: 7593328758805677304
+    second: Rig_Big|Start_dancing
+  - first:
+      74: -4339629874518290637
+    second: Rig_Big|Turn_around
+  - first:
+      74: 4466528684200534476
+    second: Rig_Big|Walking_Long
+  - first:
+      74: -2100556448786344836
+    second: Rig_Big|Walking_Big
+  - first:
+      74: -5332928327343743229
+    second: Rig_Big|Walking_Middle
+  - first:
+      74: 3739987444178021704
+    second: Rig_Big|Walking_Middle.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main
+    second: {fileID: 2100000, guid: a584febdff253a94690456fa3266006d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 772296b512b39e84e839c1815daa6dfc, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rig_Big|Aim_Big
+      takeName: Rig_Big|Aim_Big
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig_Big|Idle_Big
+      takeName: Rig_Big|Idle_Big
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 259
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig_Big|Shoot_Big
+      takeName: Rig_Big|Shoot_Big
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rig_Big|Walking_Big
+      takeName: Rig_Big|Walking_Big
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

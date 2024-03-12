@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: d7d5eb66f93f4ed41b5fd591e3988a92
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -3123950670525093382
+    second: RIg_middle|Aim_Big
+  - first:
+      74: -7036834984195577055
+    second: RIg_middle|Aim_Long
+  - first:
+      74: -1619727049333747778
+    second: RIg_middle|Aim_Middle
+  - first:
+      74: 124953886955565302
+    second: RIg_middle|Dancing
+  - first:
+      74: -8943695918121907467
+    second: RIg_middle|Dancing_loop
+  - first:
+      74: -7302470902445342760
+    second: RIg_middle|Give_it_to_me
+  - first:
+      74: 2110427478011653304
+    second: RIg_middle|Hands_Up
+  - first:
+      74: 2919580748059766361
+    second: RIg_middle|Idle_Big
+  - first:
+      74: -4785799125325523405
+    second: RIg_middle|Idle_feet_barrel
+  - first:
+      74: 6453367166355200668
+    second: RIg_middle|Idle_Long
+  - first:
+      74: 5596149901666550945
+    second: RIg_middle|Idle_Main
+  - first:
+      74: 6972272456886520026
+    second: RIg_middle|Idle_Middle
+  - first:
+      74: -8164647071458854628
+    second: RIg_middle|Idle_no_barrel
+  - first:
+      74: 6266033870395331501
+    second: RIg_middle|Idle_with_barrel
+  - first:
+      74: -8726296849798478067
+    second: RIg_middle|Rig_main.004|mixamo.com|Layer0
+  - first:
+      74: -3111840474883225452
+    second: RIg_middle|Rig_main.004|Rig_main.004|New.001|Rig_main.004|New.001
+  - first:
+      74: -1016700983216462680
+    second: RIg_middle|Rig_main.004|Rig_main.004|New|Rig_main.004|New
+  - first:
+      74: 1419939869120482549
+    second: RIg_middle|Rig_main.004|Rig_main.004|Running|Rig_main.004|Running
+  - first:
+      74: -2053155382411101539
+    second: RIg_middle|Run_no_burrel
+  - first:
+      74: -5753767296424908955
+    second: RIg_middle|Run_with_burrel
+  - first:
+      74: -7944049788268940702
+    second: RIg_middle|Running
+  - first:
+      74: 5873448172761448188
+    second: RIg_middle|Shoot_Big
+  - first:
+      74: 9016687493892127455
+    second: RIg_middle|Shoot_Long
+  - first:
+      74: -6339027660483153724
+    second: RIg_middle|Shoot_Middle
+  - first:
+      74: 3803325530498651770
+    second: RIg_middle|Start_dancing
+  - first:
+      74: -7767131617608253885
+    second: RIg_middle|Turn_around
+  - first:
+      74: -1629588561725006569
+    second: RIg_middle|Walking_Long
+  - first:
+      74: 4069492939721292115
+    second: RIg_middle|Walking_Big
+  - first:
+      74: 5890025906884620223
+    second: RIg_middle|Walking_Middle
+  - first:
+      74: 6649258794530894324
+    second: RIg_middle|Walking_Middle.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main
+    second: {fileID: 2100000, guid: a584febdff253a94690456fa3266006d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 772296b512b39e84e839c1815daa6dfc, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RIg_middle|Aim_Middle
+      takeName: RIg_middle|Aim_Middle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RIg_middle|Idle_Middle
+      takeName: RIg_middle|Idle_Middle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 256
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RIg_middle|Shoot_Middle
+      takeName: RIg_middle|Shoot_Middle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RIg_middle|Walking_Middle
+      takeName: RIg_middle|Walking_Middle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
