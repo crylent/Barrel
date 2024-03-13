@@ -74,7 +74,7 @@ public class Enemy: MonoBehaviour
         _shootIsDone = true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!other.CompareTag("Player")) return;
         var player = other.GetComponent<PlayerController>();
