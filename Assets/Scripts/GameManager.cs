@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -14,6 +13,10 @@ public class GameManager: MonoBehaviour
     [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private GameObject popupWin;
     [SerializeField] private GameObject popupFail;
+    [SerializeField] private TextMeshProUGUI time;
+    [SerializeField] private TextMeshProUGUI bestTime;
+
+    private const string PrefKey = "timeScore";
 
     private PlayerController _player;
     private Animator _canvasAnimator;
@@ -51,6 +54,7 @@ public class GameManager: MonoBehaviour
     }
 
     private static string FormatTime(float time) => $"{(int) time / 60}:{time % 60:00}";
+    private static string FormatTimePrecise(float time) => $"{(int) time / 60}:{time % 60f:00.000}";
 
     public void Restart()
     {
@@ -81,5 +85,23 @@ public class GameManager: MonoBehaviour
         popupWin.SetActive(win);
         popupFail.SetActive(!win);
         _canvasAnimator.SetBool(DisplayPause, true);
+
+        if (!win) return;
+        var timeScore = timeLimit - _timeRemains;
+        time.text = FormatTimePrecise(timeScore);
+        if (PlayerPrefs.HasKey(PrefKey))
+        {
+            var bestScore = PlayerPrefs.GetFloat(PrefKey);
+            if (timeScore < bestScore) NewRecord(timeScore);
+            else bestTime.text = $"Best: {FormatTimePrecise(bestScore)}";
+        }
+        else NewRecord(timeScore);
+    }
+
+    private void NewRecord(float timeScore)
+    {
+        PlayerPrefs.SetFloat(PrefKey, timeScore);
+        PlayerPrefs.Save();
+        bestTime.text = "New record!";
     }
 }
