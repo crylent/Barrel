@@ -6,6 +6,9 @@ public class PlayerController: MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float rotationSpeed = 0.05f;
+    [SerializeField] private GameObject barrel;
+    [SerializeField] private GameObject destructionBarrel;
+    
     private Vector2 _movement;
     private Camera _camera;
     private Animator _animator;
@@ -13,6 +16,7 @@ public class PlayerController: MonoBehaviour
     private static readonly int IsRunning = Animator.StringToHash("isRunning");
 
     [NonSerialized] public bool canMove;
+    private static readonly int OnFail = Animator.StringToHash("onFail");
     public bool IsVisible => _movement.magnitude > 0;
 
     private void Start()
@@ -43,18 +47,27 @@ public class PlayerController: MonoBehaviour
         if (!canMove) return;
         _movement = context.ReadValue<Vector2>();
         
-        if (context.started) Animate(true);
-        else if (context.canceled) Animate(false);
+        if (context.started) AnimateMovement(true);
+        else if (context.canceled) AnimateMovement(false);
     }
 
-    private void Animate(bool isRunning)
+    private void AnimateMovement(bool isRunning)
     {
         _animator.SetBool(IsRunning, isRunning);
         _barrelAnimator.SetBool(IsRunning, isRunning);
     }
 
-    public void Die()
+    public void Stop()
     {
-        
+        canMove = false;
+        _movement = Vector2.zero;
+        AnimateMovement(false);
+    }
+
+    public void Fail()
+    {
+        barrel.SetActive(false);
+        destructionBarrel.SetActive(true);
+        _animator.SetTrigger(OnFail);
     }
 }

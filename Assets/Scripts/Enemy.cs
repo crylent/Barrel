@@ -9,9 +9,11 @@ public class Enemy: MonoBehaviour
     [SerializeField] private float speed = 3f;
 
     private Animator _animator;
-    
+
+    private bool _isPatrolling;
     private bool _isTakingRest;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
+    private static readonly int OnShootTrigger = Animator.StringToHash("onShoot");
 
     private void Start()
     {
@@ -26,8 +28,9 @@ public class Enemy: MonoBehaviour
 
     private IEnumerator Patrol()
     {
+        _isPatrolling = true;
         var i = 0;
-        while (true)
+        while (_isPatrolling)
         {
             Walk(waypoints[i], out var time);
             yield return new WaitForSeconds(time);
@@ -55,9 +58,20 @@ public class Enemy: MonoBehaviour
         _animator.SetBool(IsWalking, false);
     }
 
-    private void KillPlayer()
+    private bool _shootIsDone;
+
+    private IEnumerator Shoot(PlayerController player)
     {
-        
+        var posDiff = player.transform.position - transform.position;
+        transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(posDiff.x, posDiff.z) * Mathf.Rad2Deg, Vector3.up);
+        _animator.SetTrigger(OnShootTrigger);
+        yield return new WaitUntil(() => _shootIsDone);
+        player.Fail();
+    }
+
+    public void OnShoot()
+    {
+        _shootIsDone = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,8 +79,10 @@ public class Enemy: MonoBehaviour
         if (!other.CompareTag("Player")) return;
         var player = other.GetComponent<PlayerController>();
         if (!player.IsVisible) return;
-        
-        KillPlayer();
-        player.Die();
+
+        _isPatrolling = false;
+        StopWalking();
+        StartCoroutine(Shoot(player));
+        player.Stop();
     }
 }
