@@ -7,12 +7,17 @@ public class PlayerController: MonoBehaviour
     [SerializeField] private float rotationSpeed = 0.05f;
     private Vector2 _movement;
     private Camera _camera;
+    private Animator _animator;
+    private Animator _barrelAnimator;
+    private static readonly int IsRunning = Animator.StringToHash("isRunning");
 
     public bool IsVisible => _movement.magnitude > 0;
 
     private void Start()
     {
         _camera = Camera.main;
+        _animator = GetComponent<Animator>();
+        _barrelAnimator = GetComponentsInChildren<Animator>()[1];
     }
 
     private void Update()
@@ -34,6 +39,15 @@ public class PlayerController: MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         _movement = context.ReadValue<Vector2>();
+        
+        if (context.started) Animate(true);
+        else if (context.canceled) Animate(false);
+    }
+
+    private void Animate(bool isRunning)
+    {
+        _animator.SetBool(IsRunning, isRunning);
+        _barrelAnimator.SetBool(IsRunning, isRunning);
     }
 
     public void Die()
