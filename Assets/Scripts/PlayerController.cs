@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,7 @@ public class PlayerController: MonoBehaviour
     private Animator _barrelAnimator;
     private static readonly int IsRunning = Animator.StringToHash("isRunning");
 
+    [NonSerialized] public bool canMove;
     public bool IsVisible => _movement.magnitude > 0;
 
     private void Start()
@@ -38,6 +40,7 @@ public class PlayerController: MonoBehaviour
     
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!canMove) return;
         _movement = context.ReadValue<Vector2>();
         
         if (context.started) Animate(true);
