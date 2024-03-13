@@ -18,6 +18,7 @@ public class PlayerController: MonoBehaviour
 
     [NonSerialized] public bool canMove;
     private static readonly int OnFail = Animator.StringToHash("onFail");
+    private static readonly int OnWin = Animator.StringToHash("onWin");
     public bool IsVisible => _movement.magnitude > 0;
 
     private void Start()
@@ -72,5 +73,12 @@ public class PlayerController: MonoBehaviour
         destructionBarrel.SetActive(true);
         _animator.SetTrigger(OnFail);
         _gameManager.StopGame(false);
+    }
+
+    public void Win()
+    {
+        Stop();
+        _animator.SetTrigger(OnWin);
+        _barrelAnimator.SetTrigger(OnWin);
     }
 }
