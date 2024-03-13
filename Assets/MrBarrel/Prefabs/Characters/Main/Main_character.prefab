@@ -921,6 +921,38 @@ Transform:
   m_Father: {fileID: 4673140634514522935}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -4.4791946, y: -9.166753, z: -19.917553}
+--- !u!1 &6995714515917802524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 725036830923943159}
+  m_Layer: 0
+  m_Name: Camera Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &725036830923943159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995714515917802524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3590890851489471344}
+  m_Father: {fileID: 6845022413973350881}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7266841234245430727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1055,7 @@ Transform:
   - {fileID: 4180507927066470726}
   - {fileID: 5468427958914166068}
   - {fileID: 6682961349886828689}
-  - {fileID: 3590890851489471344}
+  - {fileID: 725036830923943159}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1091,13 +1123,21 @@ MonoBehaviour:
     m_ActionId: ed28b185-70ce-4d94-8dc8-da443283850d
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4770892972150850593}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnLook
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5858ebef-53bb-4aab-9a74-2e8da8d99fc2
     m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 373164c2-3ebc-4db1-92fb-459aab02ce78
-    m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 17e4ef8a-93c9-442a-8558-ce5d593bf784
@@ -1139,7 +1179,7 @@ MonoBehaviour:
     m_ActionId: 0efb0f26-52a1-4023-9dc0-a969fc39162e
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Touch
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -1157,6 +1197,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 0.025
+  cameraArm: {fileID: 725036830923943159}
+  cameraRotationSpeed: {x: 80, y: 40}
+  cameraMaxDeviation: {x: 60, y: 15}
+  cameraReturnForce: {x: 0.02, y: 0.05}
   barrel: {fileID: 7702839988366185090}
   destructionBarrel: {fileID: 4658994627529209742}
 --- !u!54 &9158280166928520996
@@ -1466,7 +1510,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6845022413973350881}
+  m_Father: {fileID: 725036830923943159}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5466734671219900411
