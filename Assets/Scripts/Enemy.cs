@@ -55,8 +55,18 @@ public class Enemy: MonoBehaviour
         _animator.SetBool(IsWalking, false);
     }
 
+    private void KillPlayer()
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        print(other.tag);
+        if (!other.CompareTag("Player")) return;
+        var player = other.GetComponent<PlayerController>();
+        if (!player.IsVisible) return;
+        
+        KillPlayer();
+        player.Die();
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -35,5 +34,10 @@ public class PlayerController: MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         _movement = context.ReadValue<Vector2>();
+    }
+
+    public void Die()
+    {
+        
     }
 }
