@@ -44,13 +44,19 @@ public class GameManager: MonoBehaviour
     {
         _timeRemains = timeLimit;
         _stopTimer = false;
-        while((int) _timeRemains >= 0)
+        StartCoroutine(UpdateTimer());
+        yield return new WaitForSeconds(timeLimit);
+        StopGame(false);
+    }
+
+    private IEnumerator UpdateTimer()
+    {
+        while(!_stopTimer)
         {
             if (_stopTimer) yield break;
             timer.text = FormatTime(_timeRemains);
             yield return new WaitForSeconds(1);
         }
-        StopGame(false);
     }
 
     private static string FormatTime(float time) => $"{(int) time / 60}:{time % 60:00}";

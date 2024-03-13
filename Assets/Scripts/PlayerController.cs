@@ -30,7 +30,6 @@ public class PlayerController: MonoBehaviour
         _animator = GetComponent<Animator>();
         _barrelAnimator = GetComponentsInChildren<Animator>()[1];
         Input.multiTouchEnabled = true;
-        Debug.Log(Input.multiTouchEnabled);
     }
 
     private void Update()
