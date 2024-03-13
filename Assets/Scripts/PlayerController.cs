@@ -8,7 +8,8 @@ public class PlayerController: MonoBehaviour
     [SerializeField] private float rotationSpeed = 0.05f;
     [SerializeField] private GameObject barrel;
     [SerializeField] private GameObject destructionBarrel;
-    
+
+    private GameManager _gameManager;
     private Vector2 _movement;
     private Camera _camera;
     private Animator _animator;
@@ -21,6 +22,7 @@ public class PlayerController: MonoBehaviour
 
     private void Start()
     {
+        _gameManager = FindObjectOfType<GameManager>();
         _camera = Camera.main;
         _animator = GetComponent<Animator>();
         _barrelAnimator = GetComponentsInChildren<Animator>()[1];
@@ -69,5 +71,6 @@ public class PlayerController: MonoBehaviour
         barrel.SetActive(false);
         destructionBarrel.SetActive(true);
         _animator.SetTrigger(OnFail);
+        _gameManager.StopGame(false);
     }
 }

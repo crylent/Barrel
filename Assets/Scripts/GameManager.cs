@@ -7,12 +7,17 @@ public class GameManager: MonoBehaviour
 {
     [SerializeField] private int countdownTime = 3;
     [SerializeField] private TextMeshProUGUI countdown;
+    [SerializeField] private GameObject popupWin;
+    [SerializeField] private GameObject popupFail;
 
     private PlayerController _player;
+    private Animator _canvasAnimator;
+    private static readonly int DisplayPause = Animator.StringToHash("display");
 
     private void Start()
     {
         _player = FindObjectOfType<PlayerController>();
+        _canvasAnimator = FindObjectOfType<Canvas>().GetComponent<Animator>();
         StartCoroutine(Countdown());
     }
 
@@ -36,5 +41,12 @@ public class GameManager: MonoBehaviour
     private void StartGame()
     {
         _player.canMove = true;
+    }
+
+    public void StopGame(bool win)
+    {
+        popupWin.SetActive(win);
+        popupFail.SetActive(!win);
+        _canvasAnimator.SetBool(DisplayPause, true);
     }
 }
