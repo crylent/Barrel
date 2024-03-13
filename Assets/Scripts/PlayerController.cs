@@ -22,7 +22,7 @@ public class PlayerController: MonoBehaviour
     [NonSerialized] public bool canMove;
     private static readonly int OnFail = Animator.StringToHash("onFail");
     private static readonly int OnWin = Animator.StringToHash("onWin");
-    public bool IsVisible => _movement.magnitude > 0;
+    public bool IsVisible => _animator.GetCurrentAnimatorStateInfo(0).IsTag("Run");
 
     private void Start()
     {
