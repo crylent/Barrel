@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager: MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class GameManager: MonoBehaviour
     {
         _player = FindObjectOfType<PlayerController>();
         StartCoroutine(Countdown());
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private IEnumerator Countdown()
